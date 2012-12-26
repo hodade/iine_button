@@ -31,8 +31,6 @@ if($db = sqlite_open('iine.db',0705,$errmsg)){
 <head>
 <meta name="viewport" content="width=500px;" /> 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="言い値,いいね">
-<meta name="description" content="これは言い値ボタンです。">
 <title><?= $SITE_TITLE ?></title>
 <style type="text/css">
 <!--
@@ -45,7 +43,13 @@ if($db = sqlite_open('iine.db',0705,$errmsg)){
 </head>
 <body>
 
-<form name="form1" action="click.php" method="POST"><input type="hidden" name="title"><input type="hidden" name="url" value="<?= $url ?>"><input type="submit" value="<?= $BUTTON_CAPTION ?>" style="font-size:9px; width:45px; height:20px;"><span style="font-size:9px;"><?= $count ?>円</span></form>
+<form name="form1" action="click.php" method="POST">
+<input type="hidden" name="title">
+<input type="hidden" name="url" value="<?= $url ?>">
+<input type="submit" value="<?= $BUTTON_CAPTION ?>" style="font-size:9px; width:45px; height:20px;">
+<span style="font-size:9px;"><?= $count ?>
+</span>
+</form>
 
 <script type="text/javascript">
 <!--

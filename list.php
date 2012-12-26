@@ -18,23 +18,15 @@ if($db = sqlite_open('iine.db',0705,$errmsg)){
 ?>
 <html>
 <head>
-
 <meta name="viewport" content="width=600px;" /> 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
-<meta name="keywords" content="言い値！,いいね！">
-<meta name="description" content="これは言い値ボタンです。">
-
 <title><?= $SITE_TITLE ?></title>
-
 <style type="text/css">
 <!--
 
 * {
 	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
 }
-
-
 //-->
 </style>
 
